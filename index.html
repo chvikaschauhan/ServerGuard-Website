@@ -1,319 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ServerGuard | 24/7 Server Monitoring</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:#f4f7fb;
-color:#333;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#0f172a;
-color:white;
-}
-
-header h2{
-font-size:24px;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:white;
-font-size:15px;
-}
-
-.hero{
-background:linear-gradient(120deg,#2563eb,#1e3a8a);
-color:white;
-padding:120px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:45px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:25px;
-}
-
-.hero button{
-background:white;
-color:#2563eb;
-border:none;
-padding:14px 30px;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
-}
-
-.section{
-padding:70px 10%;
-text-align:center;
-}
-.checklist{
-padding:70px 10%;
-text-align:left;
-}
-
-.section h2{
-margin-bottom:40px;
-font-size:32px;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 6px 15px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card i{
-font-size:35px;
-color:#2563eb;
-margin-bottom:15px;
-}
-
-.pricing{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.price-card{
-background:white;
-padding:35px;
-border-radius:10px;
-box-shadow:0 6px 15px rgba(0,0,0,0.08);
-}
-
-.price-card h3{
-margin-bottom:10px;
-}
-
-.price-card h2{
-color:#2563eb;
-margin-bottom:15px;
-}
-
-.cta{
-background:#2563eb;
-color:white;
-padding:80px 20px;
-text-align:center;
-}
-
-.cta h2{
-font-size:34px;
-margin-bottom:15px;
-}
-
-.cta button{
-background:white;
-color:#2563eb;
-border:none;
-padding:14px 30px;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a2b">
+  <meta name="description" content="ServerGuard helps SaaS teams build reliable Node.js backends and monitor websites, APIs, SSL certificates, and critical user journeys.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://serverguard.in/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ServerGuard | Backend Engineering & Uptime Monitoring">
+  <meta property="og:description" content="Build a dependable backend and spot production issues sooner with practical engineering and monitoring from ServerGuard.">
+  <meta property="og:url" content="https://serverguard.in/">
+  <meta name="twitter:card" content="summary">
+  <title>ServerGuard | Node.js Backend Engineering & Uptime Monitoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ServerGuard",
+    "url": "https://serverguard.in/",
+    "email": "vikas@serverguard.in",
+    "description": "Node.js backend engineering, PostgreSQL optimization, backend maintenance, and website and API monitoring for SaaS teams.",
+    "areaServed": "Worldwide",
+    "knowsAbout": ["Node.js development", "PostgreSQL optimization", "Website monitoring", "API monitoring", "SSL certificate monitoring"]
+  }
+  </script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="ServerGuard home"><span class="brand-mark" aria-hidden="true">S</span>Server<span>Guard</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a><a href="#monitoring">Monitoring</a><a href="#process">How it works</a><a href="#faq">FAQs</a>
+        <a class="nav-cta" href="mailto:vikas@serverguard.in?subject=Backend%20health%20check">Talk to an engineer <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-<h2>ServerGuard</h2>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot"></span> BACKEND ENGINEERING & RELIABILITY</p>
+          <h1>Build with confidence.<br><span>Stay ahead of downtime.</span></h1>
+          <p class="hero-lede">ServerGuard helps SaaS teams ship dependable Node.js backends and catch production issues early with practical engineering and always-on monitoring.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:vikas@serverguard.in?subject=Free%20backend%20health%20check">Request a free health check <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof"><span class="proof-icon" aria-hidden="true">✓</span><span>Clear recommendations. Practical engineering. Reliable systems.</span></div>
+        </div>
+        <div class="monitor-card" aria-label="Illustration of a healthy service monitoring dashboard">
+          <div class="monitor-top"><div><span class="mini-mark">SG</span><strong>Service overview</strong></div><span class="live-label"><i></i> SYSTEMS OPERATIONAL</span></div>
+          <div class="uptime-block"><div><span class="muted">API availability</span><strong>Healthy</strong></div><div class="availability">99.98<span>%</span></div></div>
+          <div class="chart" aria-hidden="true"><div class="chart-grid"></div><svg viewBox="0 0 500 130" preserveAspectRatio="none"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#39d6b0" stop-opacity=".23"/><stop offset="1" stop-color="#39d6b0" stop-opacity="0"/></linearGradient></defs><path class="chart-fill" d="M0 90 C28 87 30 68 57 73 S90 83 111 64 S143 57 164 69 S190 63 213 51 S243 62 266 47 S300 52 321 38 S352 48 375 34 S404 48 428 29 S462 38 500 17 V130 H0Z"/><path class="chart-line" d="M0 90 C28 87 30 68 57 73 S90 83 111 64 S143 57 164 69 S190 63 213 51 S243 62 266 47 S300 52 321 38 S352 48 375 34 S404 48 428 29 S462 38 500 17"/></svg></div>
+          <div class="chart-labels"><span>12:00</span><span>12:15</span><span>12:30</span><span>12:45</span><span>NOW</span></div>
+          <div class="monitor-bottom"><span><i class="status-dot green"></i> API endpoint <b>Operational</b></span><span><i class="status-dot green"></i> SSL certificate <b>Valid</b></span><span><i class="status-dot green"></i> Response time <b>142 ms</b></span></div>
+          <p class="demo-note">Illustrative dashboard preview</p>
+        </div>
+      </div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+    </section>
 
-<nav>
-<a href="#services">Services</a>
-<a href="#features">Monitoring</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+    <section class="trust-strip" aria-label="What we help with"><div><span>01</span> Build robust APIs</div><div><span>02</span> Improve database performance</div><div><span>03</span> Detect issues earlier</div><div><span>04</span> Maintain production systems</div></section>
 
-<section class="hero">
+    <section class="section services-section" id="services">
+      <div class="section-heading"><p class="eyebrow eyebrow-dark">ENGINEERING THAT SCALES WITH YOU</p><h2>From your first API to<br><span>day-to-day reliability.</span></h2><p>Get focused engineering help for the backend work that keeps your product fast, maintainable, and ready for growth.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon icon-blue" aria-hidden="true">{ }</div><p class="card-kicker">01 / BUILD</p><h3>Node.js backend development</h3><p>Design and build REST APIs, authentication, integrations, and service architectures around your product and team.</p><a href="mailto:vikas@serverguard.in?subject=Node.js%20backend%20development">Discuss a project <span>↗</span></a></article>
+        <article class="service-card"><div class="service-icon icon-violet" aria-hidden="true">◈</div><p class="card-kicker">02 / OPTIMIZE</p><h3>PostgreSQL performance</h3><p>Improve schemas, indexes, and slow queries so your data layer can keep up as usage and product complexity grow.</p><a href="mailto:vikas@serverguard.in?subject=PostgreSQL%20optimization">Improve database performance <span>↗</span></a></article>
+        <article class="service-card"><div class="service-icon icon-amber" aria-hidden="true">⌘</div><p class="card-kicker">03 / MAINTAIN</p><h3>Backend maintenance</h3><p>Get experienced help with production bugs, code quality, dependency updates, and incremental feature work.</p><a href="mailto:vikas@serverguard.in?subject=Backend%20maintenance">Plan ongoing support <span>↗</span></a></article>
+        <article class="service-card featured-card"><div class="service-icon icon-green" aria-hidden="true">◎</div><p class="card-kicker">04 / MONITOR</p><h3>Website & API monitoring</h3><p>Track availability, SSL certificate expiry, response checks, and critical user journeys with useful alerts.</p><a href="#monitoring">Explore monitoring <span>↗</span></a></article>
+      </div>
+    </section>
 
-<h1>Reliable Node.js Backend Engineering & Proactive Monitoring</h1>
+    <section class="monitoring-section" id="monitoring"><div class="monitoring-layout"><div class="monitoring-copy"><p class="eyebrow">KNOW WHEN SOMETHING NEEDS ATTENTION</p><h2>Catch the small issues<br>before they become<br><span>big interruptions.</span></h2><p>ServerGuard monitoring keeps an eye on the parts of your service customers depend on. Get timely signals that help you investigate and respond with context.</p><a class="button button-light" href="mailto:vikas@serverguard.in?subject=ServerGuard%20monitoring">Ask about monitoring <span>→</span></a></div>
+      <div class="monitor-list"><article><span class="list-icon">↗</span><div><h3>Website & API uptime</h3><p>Check endpoint availability and response behavior from scheduled probes.</p></div><span class="list-number">01</span></article><article><span class="list-icon">⌁</span><div><h3>SSL certificate checks</h3><p>Keep certificate validity and upcoming expiry on your radar.</p></div><span class="list-number">02</span></article><article><span class="list-icon">⌘</span><div><h3>Critical user journeys</h3><p>Monitor important flows such as sign-in, checkout, or key API sequences.</p></div><span class="list-number">03</span></article><article><span class="list-icon">!</span><div><h3>Actionable notifications</h3><p>Route alerts to email or Telegram so your team can investigate promptly.</p></div><span class="list-number">04</span></article></div></div></section>
 
-<p>
-I help SaaS startups build scalable Node.js backends and prevent downtime through API development,
-PostgreSQL optimization, backend maintenance, SSL monitoring, and critical user flow monitoring with ServerGuard.
-</p>
+    <section class="section process-section" id="process"><div class="section-heading"><p class="eyebrow eyebrow-dark">A STRAIGHTFORWARD START</p><h2>Good systems start<br><span>with a clear picture.</span></h2><p>Work begins with understanding what you have, where it hurts, and what matters most to your users.</p></div><div class="process-grid"><article><span>01</span><h3>Understand</h3><p>Review your backend, current monitoring, architecture, and the production issues affecting your team.</p></article><article><span>02</span><h3>Prioritize</h3><p>Agree on the highest-impact improvements, with clear scope and recommendations your team can act on.</p></article><article><span>03</span><h3>Improve & monitor</h3><p>Implement the agreed work and set up checks that help you see when important services need attention.</p></article></div></section>
 
-<button onclick="window.location.href='mailto:vikas@serverguard.in?subject=Free Backend Health Check'">
-Get Free Backend Health Check
-</button>
+    <section class="faq-section" id="faq"><div class="faq-layout"><div class="faq-intro"><p class="eyebrow">COMMON QUESTIONS</p><h2>Things teams<br><span>want to know.</span></h2><p>Have a question about your stack or production setup? <a href="mailto:vikas@serverguard.in">Send a note ↗</a></p></div><div class="faq-list">
+      <details><summary>What kinds of teams do you work with?<span>+</span></summary><p>ServerGuard works with SaaS teams that need help building, improving, or maintaining Node.js backends and production services.</p></details>
+      <details><summary>What can website and API monitoring check?<span>+</span></summary><p>Monitoring can check whether websites and API endpoints respond as expected, track SSL certificate validity, and cover selected critical user journeys. The right checks depend on your application.</p></details>
+      <details><summary>Can you work with an existing backend?<span>+</span></summary><p>Yes. Work can start with your current Node.js and PostgreSQL setup, including performance reviews, bug fixes, maintenance, or a monitoring health check.</p></details>
+      <details><summary>How do I get started?<span>+</span></summary><p>Email a short description of your application and what you want to improve. We can discuss the current setup and agree on a useful next step.</p></details>
+    </div></div></section>
 
-</section>
-
-<section class="section">
-
-<h2 id="services">Backend Engineering Services</h2>
-
-<div class="features">
-
-<div class="card">
-<i class="fas fa-code"></i>
-
-<h3>Node.js Backend Development</h3>
-
-<p>
-Build scalable REST APIs, authentication systems,
-microservices and backend architectures.
-</p>
-</div>
-
-<div class="card">
-<i class="fas fa-database"></i>
-
-<h3>PostgreSQL Optimization</h3>
-
-<p>
-Database design, query optimization,
-index tuning and performance improvements.
-</p>
-</div>
-
-<div class="card">
-<i class="fas fa-wrench"></i>
-
-<h3>Backend Maintenance</h3>
-
-<p>
-Bug fixing, production support,
-feature development and long-term maintenance.
-</p>
-</div>
-
-<div class="card">
-<i class="fas fa-heart-pulse"></i>
-
-<h3>ServerGuard Monitoring</h3>
-
-<p>
-Monitor APIs, websites, SSL certificates,
-response validation and critical user journeys 24/7.
-</p>
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>How We Help</h2>
-<p>✅ Understand your backend architecture</p>
-
-<p>✅ Fix bugs, improve APIs and optimize performance</p>
-
-<p>✅ Monitor your production systems 24/7 with ServerGuard</p>
-
-<p>✅ Receive proactive alerts before customers notice issues</p>
-
-</section>
-
-<section class="section">
-
-<h2>Why Choose ServerGuard?</h2>
-
-<div class="features">
-
-<div class="card">
-<i class="fas fa-code"></i>
-<h3>Production Backend Expertise</h3>
-<p>We build, maintain, and optimize production-grade Node.js backends, ensuring your APIs remain fast, secure, and reliable.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-heart-pulse"></i>
-<h3>Proactive Monitoring</h3>
-<p>Monitor APIs, websites, SSL certificates, and critical user journeys 24/7 before issues impact your customers.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-bolt"></i>
-<h3>Fast Incident Response</h3>
-<p>Receive instant Email and Telegram alerts, enabling faster diagnosis and resolution of production issues.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-handshake"></i>
-<h3>Long-Term Engineering Partner</h3>
-<p>From backend development to ongoing maintenance and monitoring, we help SaaS teams build reliable products with confidence.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="cta">
-
-<h2>Let's Make Your Backend Reliable</h2>
-
-<p>
-Book a free backend health check and discover issues before your users do.
-</p>
-<br>
-
-<button onclick="window.location.href='mailto:vikas@serverguard.in?subject=Free Trial Request&body=Hi ServerGuard,%0A%0AI want to start a free trial.%0A%0AWebsite URL:%0AContact Name:%0APhone Number:%0A%0AThanks'">
-    Book Free Health Check
-</button>
-
-</section>
-
-<footer>
-
-<p>© 2026 ServerGuard | All rights reserved</p>
-
-</footer>
-
+    <section class="contact-section" id="contact"><div class="contact-inner"><div><p class="eyebrow">LET'S MAKE YOUR BACKEND MORE RELIABLE</p><h2>Ready to make production<br><span>less of a guessing game?</span></h2><p>Tell us what you’re building and where you need support. Start with a free backend health check conversation.</p></div><a class="button button-primary" href="mailto:vikas@serverguard.in?subject=Free%20backend%20health%20check&body=Hi%20ServerGuard%2C%0A%0AI'd%20like%20to%20discuss%20a%20backend%20health%20check.%0A%0AWebsite%20or%20product%3A%0AWhat%20I%20need%20help%20with%3A%0A">Book a free health check <span>→</span></a></div></section>
+  </main>
+  <footer><div class="footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">S</span>Server<span>Guard</span></a><p>Backend engineering and monitoring for dependable digital products.</p><a href="mailto:vikas@serverguard.in">vikas@serverguard.in</a><small>© <span id="year">2026</span> ServerGuard. All rights reserved.</small></div></footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
